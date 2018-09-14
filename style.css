@@ -240,9 +240,11 @@ nav {
 #locationSearch {
   border: none;
   width: 60%;
+  padding: 10px;
   overflow: hidden;
   display: inline-flex;
   font-size: 50px;
+  background-color: white;
 }
 
 #locationSearch input[type="text"] {
@@ -266,5 +268,6 @@ nav {
 footer {
   background-color: rgba(61, 61, 59, 0.8);
   color: white;
+  padding: 50px;
   text-align: center;
 }
