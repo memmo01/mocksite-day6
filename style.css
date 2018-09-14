@@ -12,267 +12,268 @@ header {
   border-bottom: 1px solid black;
   padding: 20px;
 }
+@media (min-width: 300px) {
+  header i,
+  header img {
+    display: inline-block;
+  }
 
-header i,
-header img {
-  display: inline-block;
-}
+  header img {
+    padding-top: 10px;
+    width: 25%;
+  }
 
-header img {
-  padding-top: 10px;
-  width: 25%;
-}
+  .mobileHamburgerArea {
+    float: left;
+    padding: 25px 20px 20px 20px;
+    font-size: 60px;
+  }
+  #mobileUser {
+    font-size: 50px;
+  }
+  .sign {
+    float: right;
+    display: grid;
+    padding: 25px 20px 0 20px;
+    font-size: 13px;
+    color: rgba(0, 87, 146, 1);
+  }
 
-.mobileHamburgerArea {
-  float: left;
-  padding: 25px 20px 20px 20px;
-  font-size: 60px;
-}
-#mobileUser {
-  font-size: 50px;
-}
-.sign {
-  float: right;
-  display: grid;
-  padding: 25px 20px 0 20px;
-  font-size: 13px;
-  color: rgba(0, 87, 146, 1);
-}
+  #userIconText {
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+  }
 
-#userIconText {
-  font-size: 30px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-}
+  .navIcons,
+  nav {
+    display: none;
+  }
+  .mobileMenu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+  }
 
-.navIcons,
-nav {
-  display: none;
-}
-.mobileMenu {
-  display: none;
-  width: 100%;
-  position: absolute;
-  background-color: white;
-  height: 100%;
-  overflow: hidden;
-}
+  .mobileMenu ul {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 50px;
+  }
 
-.mobileMenu ul {
-  width: 90%;
-  margin-left: 5%;
-  font-size: 50px;
-}
+  .mobileMenu li {
+    padding: 50px 0 50px 0;
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
 
-.mobileMenu li {
-  padding: 50px 0 50px 0;
-  text-align: left;
-  border-bottom: 1px solid black;
-}
+  .mobileMenu ul:last-child {
+    border-bottom: 5px solid black;
+  }
 
-.mobileMenu ul:last-child {
-  border-bottom: 5px solid black;
-}
+  #mobileHamburgerClose {
+    display: none;
+  }
+  #mainTop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("./images/tabletadpic.JPG");
+    background-size: cover;
+    padding: 200px 0 100px 0;
+    color: white;
+    text-align: center;
+    font-family: "Nanum Gothic", sans-serif;
+  }
 
-#mobileHamburgerClose {
-  display: none;
-}
-#mainTop {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./images/tabletadpic.JPG");
-  background-size: cover;
-  padding: 200px 0 100px 0;
-  color: white;
-  text-align: center;
-  font-family: "Nanum Gothic", sans-serif;
-}
+  #mainTop article {
+    width: 90%;
+    margin-left: 5%;
+    text-shadow: 3px 3px rgba(19, 51, 76, 1);
+    padding-bottom: 40px;
+  }
 
-#mainTop article {
-  width: 90%;
-  margin-left: 5%;
-  text-shadow: 3px 3px rgba(19, 51, 76, 1);
-  padding-bottom: 40px;
-}
+  #mainTop h1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 100px;
+  }
 
-#mainTop h1 {
-  margin: 0;
-  font-weight: 400;
-  font-size: 100px;
-}
+  #mainTop p {
+    font-size: 50px;
+    text-shadow: 2px 2px rgba(19, 51, 76, 1);
+    font-weight: 100;
 
-#mainTop p {
-  font-size: 50px;
-  text-shadow: 2px 2px rgba(19, 51, 76, 1);
-  font-weight: 100;
+    padding: 30px;
+  }
 
-  padding: 30px;
-}
+  .btn-blue {
+    width: 80%;
+    margin: 20px 0 0 10%;
+    background-color: rgba(0, 87, 146, 1);
+    color: white;
+    display: block;
+    padding: 30px 0 30px 0;
+    font-size: 40px;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .btn-blue:active {
+    background-color: rgba(19, 51, 76, 1);
+  }
 
-.btn-blue {
-  width: 80%;
-  margin: 20px 0 0 10%;
-  background-color: rgba(0, 87, 146, 1);
-  color: white;
-  display: block;
-  padding: 30px 0 30px 0;
-  font-size: 40px;
-  font-family: "Nanum Gothic", sans-serif;
-  font-weight: 600;
-  cursor: pointer;
-}
-.btn-blue:active {
-  background-color: rgba(19, 51, 76, 1);
-}
+  #firstSectionAd {
+    text-align: center;
+    padding: 100px 0 100px 0;
+  }
 
-#firstSectionAd {
-  text-align: center;
-  padding: 100px 0 100px 0;
-}
+  #firstSectionAd h1 {
+    font-size: 80px;
+  }
 
-#firstSectionAd h1 {
-  font-size: 80px;
-}
+  #firstSectionAd h1,
+  #firstSectionAd p {
+    padding: 20px 0 20px 0;
+  }
 
-#firstSectionAd h1,
-#firstSectionAd p {
-  padding: 20px 0 20px 0;
-}
+  .carousel {
+    display: inline-flex;
+    width: 100%;
+    padding-top: 100px;
+  }
 
-.carousel {
-  display: inline-flex;
-  width: 100%;
-  padding-top: 100px;
-}
+  .carouselInfo {
+    font-size: 50px;
+    padding: 20px 5% 10px 5%;
+    width: 100%;
+  }
 
-.carouselInfo {
-  font-size: 50px;
-  padding: 30px 10px 10px 10px;
-  width: 100%;
-}
+  .arrowLeft,
+  .arrowRight {
+    margin: 0 5px 0 5px;
+    width: 10%;
+    display: inline-flex;
+    font-size: 180px;
+    color: rgba(45, 45, 45, 0.5);
+  }
 
-.arrowLeft,
-.arrowRight {
-  margin: 0 5px 0 5px;
-  width: 10%;
-  display: inline-flex;
-  font-size: 180px;
-  color: rgba(45, 45, 45, 0.5);
-}
+  #openAccountSteps {
+    background-image: linear-gradient(
+        rgba(245, 247, 250, 0.6),
+        rgba(245, 247, 250, 0.8)
+      ),
+      url("./images/growpic.JPG");
+    background-size: cover;
+  }
 
-#openAccountSteps {
-  background-image: linear-gradient(
-      rgba(245, 247, 250, 0.6),
-      rgba(245, 247, 250, 0.8)
-    ),
-    url("./images/growpic.JPG");
-  background-size: cover;
-}
+  #openAccountSteps h1 {
+    font-family: "Nanum Gothic", sans-serif;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    padding: 80px 5px;
+    margin: 0;
+    background-color: rgba(252, 252, 252, 0.6);
+  }
 
-#openAccountSteps h1 {
-  font-family: "Nanum Gothic", sans-serif;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 500;
-  padding: 80px 5px;
-  margin: 0;
-  background-color: rgba(252, 252, 252, 0.6);
-}
+  .bankingSteps {
+    display: flex;
+    padding: 180px 0 200px 0;
+    margin: 0;
+  }
 
-.bankingSteps {
-  display: flex;
-  padding: 180px 0 200px 0;
-  margin: 0;
-}
+  .bankingSteps ul {
+    flex: 1;
+    width: 100%;
+    margin: 0;
+  }
 
-.bankingSteps ul {
-  flex: 1;
-  width: 100%;
-  margin: 0;
-}
+  .bankingSteps li {
+    display: inline-block;
+    width: 35%;
+    margin: 0;
+    text-align: center;
+  }
 
-.bankingSteps li {
-  display: inline-block;
-  width: 35%;
-  margin: 0;
-  text-align: center;
-}
+  .bankingSteps li img {
+    width: 100%;
+  }
 
-.bankingSteps li img {
-  width: 100%;
-}
+  .bankingSteps li p {
+    padding: 0 40px 40px 40px;
+    font-size: 50px;
+    color: black;
+    font-weight: 600px;
+    font-family: "Nanum Gothic", sans-serif;
+  }
 
-.bankingSteps li p {
-  padding: 0 40px 40px 40px;
-  font-size: 50px;
-  color: black;
-  font-weight: 600px;
-  font-family: "Nanum Gothic", sans-serif;
-}
+  #atmLocation {
+    text-align: center;
+    padding: 80px 0 100px 0;
+    background-color: rgba(35, 87, 137, 1);
+    color: white;
+  }
 
-#atmLocation {
-  text-align: center;
-  padding: 80px 0 100px 0;
-  background-color: rgba(35, 87, 137, 1);
-  color: white;
-}
+  #marker {
+    font-size: 100px;
+    padding: 35px;
+  }
 
-#marker {
-  font-size: 100px;
-  padding: 35px;
-}
+  #atmLocation article {
+    border: 1px solid white;
+    width: 90%;
+    margin: 100px 0 0 5%;
+    padding-top: 30px;
+  }
 
-#atmLocation article {
-  border: 1px solid white;
-  width: 90%;
-  margin: 100px 0 0 5%;
-  padding-top: 30px;
-}
+  #atmLocation p {
+    padding: 30px 50px 50px 50px;
+  }
 
-#atmLocation p {
-  padding: 30px 50px 50px 50px;
-}
+  #atmLocation h1 {
+    font-size: 70px;
+  }
 
-#atmLocation h1 {
-  font-size: 70px;
-}
+  #atmLocation article p {
+    text-align: left;
+  }
 
-#atmLocation article p {
-  text-align: left;
-}
+  #locationSearch {
+    border: none;
+    width: 60%;
+    padding: 10px;
+    overflow: hidden;
+    display: inline-flex;
+    font-size: 50px;
+    background-color: white;
+  }
 
-#locationSearch {
-  border: none;
-  width: 60%;
-  padding: 10px;
-  overflow: hidden;
-  display: inline-flex;
-  font-size: 50px;
-  background-color: white;
-}
+  #locationSearch input[type="text"] {
+    border: none;
+    width: 100%;
+    font-size: 50px;
+    background-color: white;
+  }
 
-#locationSearch input[type="text"] {
-  border: none;
-  width: 100%;
-  font-size: 50px;
-  background-color: white;
-}
+  #locationSearch input[type="text"]:focus {
+    outline: none;
+  }
 
-#locationSearch input[type="text"]:focus {
-  outline: none;
-}
+  #locationSearch i {
+    float: right;
+    padding: 10px;
+    color: rgba(53, 75, 94, 0.9);
+    background-color: white;
+  }
 
-#locationSearch i {
-  float: right;
-  padding: 10px;
-  color: rgba(53, 75, 94, 0.9);
-  background-color: white;
-}
-
-footer {
-  background-color: rgba(61, 61, 59, 0.8);
-  color: white;
-  padding: 50px;
-  text-align: center;
+  footer {
+    background-color: rgba(61, 61, 59, 0.8);
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 770px) {
   .btn-blue {
@@ -280,5 +281,41 @@ footer {
     display: inline-block;
     margin: 20px 0 0 5%;
     text-align: center;
+    font-size: 30px;
+  }
+  #mainTop h1 {
+    font-size: 80px;
+  }
+
+  #mainTop p {
+    font-size: 30px;
+  }
+  .mobileHamburgerArea {
+    float: left;
+    padding: 25px 20px 20px 20px;
+    font-size: 50px;
+  }
+  #mobileUser {
+    font-size: 40px;
+  }
+  #userIconText {
+    font-size: 25px;
+  }
+  header img {
+    width: 20%;
+  }
+  #firstSectionAd h1 {
+    padding-top: 0;
+    font-size: 70px;
+  }
+  .carousel {
+    padding-top: 50px;
+  }
+
+  .bankingSteps li p {
+    font-size: 40px;
+  }
+  #atmLocation h1 {
+    font-size: 60px;
   }
 }
