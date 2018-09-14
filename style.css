@@ -3,7 +3,6 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-
   font-family: "Open Sans", sans-serif;
 }
 
@@ -24,7 +23,7 @@ header img {
   width: 250px;
 }
 
-#mobileHamburger {
+.mobileHamburgerArea {
   float: left;
   padding: 25px 20px 20px 20px;
 }
@@ -47,7 +46,34 @@ header img {
 nav {
   display: none;
 }
+.mobileMenu {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+}
 
+.mobileMenu ul {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 50px;
+}
+
+.mobileMenu li {
+  padding: 50px 0 50px 0;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+.mobileMenu ul:last-child {
+  border-bottom: 5px solid black;
+}
+
+#mobileHamburgerClose {
+  display: none;
+}
 #mainTop {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./images/tabletadpic.JPG");
@@ -91,6 +117,9 @@ nav {
   font-weight: 600;
   cursor: pointer;
 }
+.btn-blue:active {
+  background-color: rgba(19, 51, 76, 1);
+}
 
 #firstSectionAd {
   text-align: center;
@@ -115,7 +144,7 @@ nav {
 .carouselInfo {
   font-size: 50px;
   padding: 30px 10px 10px 10px;
-  width:100%;
+  width: 100%;
 }
 
 .arrowLeft,
@@ -209,7 +238,7 @@ nav {
 }
 
 #locationSearch {
-  border: 2px solid rgba(162, 169, 175, 1);
+  border: none;
   width: 60%;
   overflow: hidden;
   display: inline-flex;

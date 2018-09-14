@@ -15,7 +15,8 @@
 
 <body>
     <header>
-        <i class="fas fa-bars fa-4x" id="mobileHamburger"></i>
+        <i class="fas fa-bars fa-4x mobileHamburgerArea" id="mobileHamburger"></i>
+        <i class="fas fa-times fa-4x mobileHamburgerArea" id="mobileHamburgerClose"></i>
         <img src="./images/cap.JPG" alt="capitalone company">
         <nav>
 
@@ -32,6 +33,16 @@
         </div>
 
     </header>
+
+    <div class="mobileMenu">
+        <ul>
+            <li>Credit Cards</li>
+            <li>Savings and Checking</li>
+            <li>Auto Loans</li>
+            <li>Commercial</li>
+        </ul>
+
+    </div>
     <section id="mainTop">
         <article>
             <h1>Your finanial health is our priority.</h1>
@@ -123,6 +134,16 @@
                 count > arr.length - 1 ? count = 0 : null;
             }
             changeCarousel()
+        })
+
+        $(".mobileHamburgerArea").on("click", (e) => {
+            e.preventDefault();
+            $(".mobileMenu").toggle()
+            $("#mobileHamburger").toggle()
+            $("#mobileHamburgerClose").toggle()
+
+
+
         })
 
         function changeCarousel() {
