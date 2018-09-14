@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  overflow: auto;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -20,14 +20,17 @@ header img {
 
 header img {
   padding-top: 10px;
-  width: 250px;
+  width: 25%;
 }
 
 .mobileHamburgerArea {
   float: left;
   padding: 25px 20px 20px 20px;
+  font-size: 60px;
 }
-
+#mobileUser {
+  font-size: 50px;
+}
 .sign {
   float: right;
   display: grid;
@@ -270,4 +273,12 @@ footer {
   color: white;
   padding: 50px;
   text-align: center;
+}
+@media screen and (min-width: 770px) {
+  .btn-blue {
+    width: 40%;
+    display: inline-block;
+    margin: 20px 0 0 5%;
+    text-align: center;
+  }
 }
