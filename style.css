@@ -20,16 +20,15 @@ header img {
 
 header img {
   padding-top: 10px;
-  width: 25%;
+  width: 40%;
 }
-
 .mobileHamburgerArea {
   float: left;
-  padding: 25px 20px 20px 20px;
-  font-size: 60px;
+  padding: 25px 10px 20px 10px;
+  font-size: 40px;
 }
 #mobileUser {
-  font-size: 50px;
+  font-size: 30px;
 }
 .sign {
   float: right;
@@ -40,7 +39,7 @@ header img {
 }
 
 #userIconText {
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
@@ -139,7 +138,7 @@ nav {
 }
 
 .carousel {
-  display: inline-flex;
+  /* display: inline-flex; */
   width: 100%;
   padding-top: 100px;
 }
@@ -152,10 +151,10 @@ nav {
 
 .arrowLeft,
 .arrowRight {
-  margin: 0 5px 0 5px;
-  width: 10%;
-  display: inline-flex;
-  font-size: 180px;
+  /* margin: 0 5px 0 5px; */
+  width: 100%;
+  /* display: inline-flex; */
+  font-size: 100px;
   color: rgba(45, 45, 45, 0.5);
 }
 
@@ -179,20 +178,19 @@ nav {
 }
 
 .bankingSteps {
-  display: flex;
+  display: grid;
   padding: 180px 0 200px 0;
   margin: 0;
 }
 
 .bankingSteps ul {
-  flex: 1;
   width: 100%;
   margin: 0;
 }
 
 .bankingSteps li {
   display: inline-block;
-  width: 35%;
+  width: 100%;
   margin: 0;
   text-align: center;
 }
@@ -275,47 +273,89 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 770px) {
+/* PPPPPPPPPPPPPPPPPPPPPPPPPPPPP */
+@media (min-width: 400px) {
+  .carousel {
+    display: inline-flex;
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    margin: 0 5px 0 5px;
+    width: 10%;
+    display: inline-flex;
+    font-size: 150px;
+    color: rgba(45, 45, 45, 0.5);
+  }
+
+  #openAccountSteps {
+    background-image: linear-gradient(
+        rgba(245, 247, 250, 0.6),
+        rgba(245, 247, 250, 0.8)
+      ),
+      url("./images/growpic.JPG");
+    background-size: cover;
+  }
+
+  #openAccountSteps h1 {
+    font-family: "Nanum Gothic", sans-serif;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    padding: 80px 5px;
+    margin: 0;
+    background-color: rgba(252, 252, 252, 0.6);
+  }
+
+  .bankingSteps {
+    display: flex;
+    padding: 180px 0 200px 0;
+    margin: 0;
+  }
+
+  .bankingSteps ul {
+    flex: 1;
+    width: 100%;
+    margin: 0;
+  }
+
+  .bankingSteps li {
+    display: inline-block;
+    width: 35%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .bankingSteps li img {
+    width: 100%;
+  }
+
+  .bankingSteps li p {
+    padding: 0 40px 40px 40px;
+    font-size: 45px;
+    color: black;
+    font-weight: 700px;
+    font-family: "Nanum Gothic", sans-serif;
+  }
+}
+@media (min-width: 600px) {
+  header img {
+    padding-top: 10px;
+    width: 30%;
+  }
+}
+@media (min-width: 770px) {
+  header img {
+    padding-top: 10px;
+    width: 20%;
+  }
   .btn-blue {
     width: 40%;
     display: inline-block;
     margin: 20px 0 0 5%;
     text-align: center;
     font-size: 30px;
-  }
-  #mainTop h1 {
-    font-size: 80px;
-  }
-
-  #mainTop p {
-    font-size: 30px;
-  }
-  .mobileHamburgerArea {
-    float: left;
-    padding: 25px 20px 20px 20px;
-    font-size: 50px;
-  }
-  #mobileUser {
-    font-size: 40px;
-  }
-  #userIconText {
-    font-size: 25px;
-  }
-  header img {
-    width: 20%;
-  }
-  #firstSectionAd h1 {
-    padding-top: 0;
-    font-size: 70px;
-  }
-  .carousel {
-    padding-top: 50px;
-  }
-
-  .bankingSteps li p {
-    font-size: 40px;
-  }
-  #atmLocation h1 {
-    font-size: 60px;
   }
 }
