@@ -10,26 +10,28 @@ header {
   text-align: center;
   overflow: hidden;
   border-bottom: 1px solid black;
-  padding: 20px;
+  padding: 10px;
+  /* background: green; */
 }
-@media (min-width: 300px) {
-  header i,
-  header img {
-    display: inline-block;
-  }
 
+header i,
+header img {
+  display: inline-block;
+}
+
+@media (min-width: 400px) {
   header img {
     padding-top: 10px;
-    width: 25%;
+    width: 30%;
   }
 
   .mobileHamburgerArea {
     float: left;
     padding: 25px 20px 20px 20px;
-    font-size: 60px;
+    font-size: 40px;
   }
   #mobileUser {
-    font-size: 50px;
+    font-size: 30px;
   }
   .sign {
     float: right;
@@ -40,9 +42,10 @@ header {
   }
 
   #userIconText {
-    font-size: 30px;
+    font-size: 10px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
+    padding-top: 5px;
   }
 
   .navIcons,
@@ -275,8 +278,8 @@ header {
     text-align: center;
   }
 }
-@media screen and (min-width: 770px) {
-  .btn-blue {
+@media (min-width: 700px) {
+  /* .btn-blue {
     width: 40%;
     display: inline-block;
     margin: 20px 0 0 5%;
@@ -317,5 +320,9 @@ header {
   }
   #atmLocation h1 {
     font-size: 60px;
+  } */
+
+  header {
+    background: blue;
   }
 }
