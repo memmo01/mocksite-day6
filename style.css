@@ -5,6 +5,9 @@ body {
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
 }
+strong {
+  font-weight: bold;
+}
 
 header {
   text-align: center;
@@ -31,21 +34,24 @@ header img {
 }
 .sign {
   float: right;
-  display: grid;
   padding: 20px;
   font-size: 13px;
   color: rgba(0, 87, 146, 1);
 }
 
-#userIconText {
+.userIconText {
+  display: grid;
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 
-.navIcons,
-nav {
+nav,
+.navIcons {
   display: none;
+  float: right;
+  padding-top: 5px;
+  color: rgba(0, 87, 146, 1);
 }
 .mobileMenu {
   display: none;
@@ -59,7 +65,7 @@ nav {
 .mobileMenu ul {
   width: 90%;
   margin-left: 5%;
-  font-size: 50px;
+  font-size: 25px;
 }
 
 .mobileMenu li {
@@ -67,9 +73,12 @@ nav {
   text-align: left;
   border-bottom: 1px solid black;
 }
+.mobileMenu li:last-child {
+  border: none;
+}
 
 .mobileMenu ul:last-child {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid rgba(163, 158, 158, 0.7);
 }
 
 #mobileHamburgerClose {
@@ -131,9 +140,30 @@ nav {
   font-size: 50px;
 }
 
-#firstSectionAd h1,
-#firstSectionAd p {
-  padding: 20px 0 20px 0;
+#firstSectionAd h1 {
+  padding: 20px 0 50px 0;
+}
+
+#firstSectionAd article {
+  width: 65%;
+  margin: 10px 0 50px 17.5%;
+  display: flex;
+  display: none;
+}
+#firstSectionAd article .promoInfo:nth-child(n + 2) {
+  border-left: 1px solid black;
+}
+.promoInfo {
+  border-right: none;
+  flex-grow: 1;
+  width: 15%;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 35px;
+  border-bottom: 1px solid black;
+}
+.promoInfo p {
+  padding: 2px;
 }
 
 .carousel {
@@ -150,8 +180,9 @@ nav {
 
 .arrowLeft,
 .arrowRight {
-  margin: 0 5px 0 5px;
-  padding-top: 20px;
+  /* margin: 0 5px 0 5px;
+  padding-top: 20px; */
+  align-self: center;
   font-size: 80px;
   color: rgba(45, 45, 45, 0.5);
 }
@@ -163,6 +194,8 @@ nav {
     ),
     url("./images/growpic.JPG");
   background-size: cover;
+
+  padding-bottom: 50px;
 }
 
 #openAccountSteps h1 {
@@ -204,7 +237,16 @@ nav {
   font-weight: 600px;
   font-family: "Nanum Gothic", sans-serif;
 }
-
+.sectionBtn {
+  cursor: pointer;
+}
+.btn-blue-reg {
+  background-color: rgba(0, 87, 146, 1);
+  padding: 10px 30px 10px 30px;
+  width: 200px;
+  color: white;
+  margin-left: 20px;
+}
 #atmLocation {
   text-align: center;
   padding: 50px 0 100px 0;
@@ -304,23 +346,103 @@ footer {
     font-size: 20px;
   }
 }
-
-/* @media (min-width: 600px) {
-  header img {
-    padding-top: 10px;
-    width: 30%;
+@media (min-width: 600px) {
+  .bankingSteps li p {
+    padding: 5px;
+    font-size: 30px;
   }
 }
 @media (min-width: 770px) {
-  header img {
+  /* header img {
     padding-top: 10px;
     width: 20%;
-  }
+  } */
   .btn-blue {
-    width: 40%;
+    width: 30%;
     display: inline-block;
     margin: 20px 0 0 5%;
     text-align: center;
-    font-size: 30px;
-  } */
-/* } */
+    font-size: 20px;
+    font-weight: 550;
+  }
+  #mainTop {
+    background-position: 30% 0%;
+  }
+
+  #atmLocation article {
+    width: 60%;
+    margin: 100px 0 0 20%;
+  }
+}
+@media (min-width: 900px) {
+  .mobileHamburgerArea {
+    display: none;
+  }
+  header img {
+    float: left;
+    padding-left: 100px;
+  }
+  nav,
+  .navIcons {
+    padding-top: 5px;
+    display: inline-flex;
+  }
+  .sign {
+    padding: 10px 0 0 0;
+  }
+  .userIconText {
+    display: inline-flex;
+  }
+  .navIcons i,
+  .sign i {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .navIcons i span,
+  .sign i span {
+    padding-left: 10px;
+  }
+  #mainTop {
+    padding: 100px 0 150px 0;
+  }
+  #mainTop h1 {
+    margin-left: 30%;
+    width: 40%;
+    font-weight: 400;
+    font-size: 60px;
+  }
+  .btn-blue {
+    width: 25%;
+  }
+  #firstSectionAd article {
+    display: flex;
+  }
+  .carousel {
+    display: none;
+  }
+  #openAccountSteps {
+    background-position: 0% 20%;
+  }
+  .bankingSteps {
+    padding: 50px 0 100px 0;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .bankingSteps li {
+    margin-left: 10px;
+    background: rgba(246, 246, 233, 0.7);
+    padding: 30px 0 30px 0;
+  }
+  .sectionBtn {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .btn-blue-reg {
+    margin-left: 0;
+  }
+  #locationSearch {
+    width: 30%;
+  }
+}
