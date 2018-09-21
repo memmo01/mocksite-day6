@@ -8,7 +8,7 @@ body {
 strong {
   font-weight: bold;
 }
-
+/* top of page navigation area */
 header {
   text-align: center;
   overflow: hidden;
@@ -72,13 +72,13 @@ nav,
   overflow: hidden;
 }
 
-.mobileMenu ul {
+#mobileMenuList {
   width: 90%;
   margin-left: 5%;
   font-size: 25px;
 }
 
-.mobileMenu li {
+#mobileMenuList .mobileMenuItem {
   padding: 50px 0 50px 0;
   text-align: left;
   border-bottom: 1px solid black;

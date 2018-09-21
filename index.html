@@ -15,6 +15,7 @@
 </style>
 
 <body>
+    <!-- top bar for navigation -->
     <header>
         <i class="fas fa-bars  mobileHamburgerArea" id="mobileHamburger"></i>
         <i class="fas fa-times mobileHamburgerArea" id="mobileHamburgerClose"></i>
@@ -23,6 +24,7 @@
         <div class="sign">
             <i class="far fa-user fa-3x" id="mobileUser"><span class="userIconText">Sign In</span></i>
         </div>
+        <!-- shown on full screen -->
         <nav>
 
             <div class="navIcons">
@@ -129,6 +131,7 @@
     </footer>
 
     <script>
+        let overflow = false;
 
         let arr = [{
             statement: "All Deposits are FDIC insured. Up to allowable limits"
@@ -160,6 +163,13 @@
 
         $(".mobileHamburgerArea").on("click", (e) => {
             e.preventDefault();
+            if (overflow === false) {
+                $("html").css("overflow-y", "hidden");
+                overflow = true;
+            } else if (overflow === true) {
+                $("html").css("overflow-y", "auto");
+                overflow = false;
+            }
             $(".mobileMenu").toggle()
             $("#mobileHamburger").toggle()
             $("#mobileHamburgerClose").toggle()
