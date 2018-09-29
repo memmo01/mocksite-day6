@@ -165,7 +165,6 @@
             e.preventDefault();
             if (overflow === false) {
                 $("html").css("overflow-y", "hidden");
-                e.stopPropagation();
                 overflow = true;
             } else if (overflow === true) {
                 $("html").css("overflow-y", "auto");
