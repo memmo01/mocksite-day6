@@ -36,7 +36,7 @@
         </nav>
 
     </header>
-<!-- shown when hamburger is selected -->
+    <!-- shown when hamburger is selected -->
     <div class="mobileMenu">
         <ul id="mobileMenuList">
             <li class="mobileMenuItem">Credit Cards</li>
@@ -161,10 +161,11 @@
             changeCarousel()
         })
 
-        $(".mobileHamburgerArea").on("click", (e) => {
+        $(".mobileHamburgerArea").on("click touchmove", (e) => {
             e.preventDefault();
             if (overflow === false) {
                 $("html").css("overflow-y", "hidden");
+                e.stopPropagation();
                 overflow = true;
             } else if (overflow === true) {
                 $("html").css("overflow-y", "auto");
